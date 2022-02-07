@@ -3,10 +3,10 @@
 # Table of Contents
 [1. Product Gallery](#Product-Gallery)  
 [2. Technical Specifics](#Technical-Specifics)  
-[2.1. Swagger Screenshots](##Swagger-Screenshots)  
-[2.2. UML Diagrams](##UML-Diagrams)  
+[2.1. Swagger Screenshots](#Swagger-Screenshots)  
+[2.2. UML Diagrams](#UML-Diagrams)  
 [3. Technical Specifics](#Business-Case)  
-[3.1. Swagger Screenshots](##Video-Pitch)  
+[3.1. Swagger Screenshots](#Video-Pitch)  
 
 # Product Gallery
 Below is a gallery of some images and videos of the hosted web application.
