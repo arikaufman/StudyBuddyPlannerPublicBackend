@@ -12,18 +12,22 @@
 Below is a gallery of some images and videos of the hosted web application.
 
 
-The image below shows the dashboard along with the friends tab. The dashboard would provide analytics for all students on their studying, and a mechanism for them to start a study session using the quick timer. The friends tab would display their list of friends on the application, and show when their friends were last studying, or if they are actively studying.
+The images below shows the dashboard along with the friends tab. The dashboard would provide analytics for all students on their studying, and a mechanism for them to start a study session using the quick timer. The friends tab would display their list of friends on the application, and show when their friends were last studying, or if they are actively studying.
 
-![dashboard](Images/laptopDashboard.png)
+The second image shows the tasks tab. This is where students could create tasks, see the sessions they have worked on each task, and start a time for their specific tasks if they wish. The time spent on their tasks would then be factored into the dashboard analytics shown above.
 
-The following image shows the tasks tab. This is where students could create tasks, see the sessions they have worked on each task, and start a time for their specific tasks if they wish. The time spent on their tasks would then be factored into the dashboard analytics shown above.
-
-![tasks](Images/laptop2.png)
+ ![dashboard](Images/laptopDashboard.png) | ![tasks](Images/laptop2.png)
+ --- | ---
 
 
 The video below runs through the view one may see when accessing the web application from mobile. The front end (within a seperate repo) was designed to accomodate varying screen sizes. All data is dynamically pulled from the backend using JSON routes.
 
 ![Landing Video Mobile](Images/Gif1LandingVideo.gif)
+
+Finally, below we see the feed. This would allow users to see their study streaks and milestones, along with those of their friends. 
+
+![Feed](Images/Feed.gif)
+
 
 # Technical Specifics
 ## Swagger Screenshots
