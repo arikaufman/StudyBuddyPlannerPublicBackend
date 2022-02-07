@@ -1,4 +1,6 @@
-![BlackText.png](Images/BlackText.png)
+<p align="center">
+<img src="Images/BlackText.png" width="300">
+</p>
 
 # Table of Contents
 [1. Product Gallery](#Product-Gallery)  
@@ -22,7 +24,9 @@ The second image shows the tasks tab. This is where students could create tasks,
 
 The video below runs through the view one may see when accessing the web application from mobile. The front end (within a seperate repo) was designed to accomodate varying screen sizes. All data is dynamically pulled from the backend using JSON routes.
 
-![Landing Video Mobile](Images/Gif1LandingVideo.gif)
+<p align="center">
+<img src="Images/Gif1LandingVideo.gif" width="300">
+</p>
 
 Finally, below we see the feed. This would allow users to see their study streaks and milestones, along with those of their friends. 
 
