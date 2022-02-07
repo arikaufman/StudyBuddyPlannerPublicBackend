@@ -1,5 +1,9 @@
 ![BlackText.png](Images/BlackText.png)
 
+# Table of Contents  
+[Product Gallery](#Product-Gallery)  
+[Technical Specifics](#Technical-Specifics)  
+
 # Product Gallery
 Below is a gallery of some images and videos of the hosted web application.
 
