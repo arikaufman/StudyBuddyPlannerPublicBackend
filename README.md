@@ -1,4 +1,5 @@
-![BlackText.png](Images/BlackText.png)
+![White Text](Images/WhiteText.png#gh-dark-mode-only)
+![Black Text](Images/BlackText.png#gh-light-mode-only)
 
 # Table of Contents
 [1 Product Gallery](#Product-Gallery)  
