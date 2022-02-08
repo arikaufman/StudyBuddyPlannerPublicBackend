@@ -43,6 +43,16 @@ The file structure of the API was broken up into 3 layers. The controller layer,
 ## Technical Diagrams
 To better illustrate the technologies used in this API, the following diagrams were created to communicate some key components of the design:
 
+The first diagram shown below, is a class diagram. The API is far too large to include the specifics of every stack. Therefore, this diagram illustrates one section of the API. it shows the relation between UserProfiles, Subjects, and Tasks. 
+
+![Class Diagram](Images/ClassDiagram.png)
+
+There are a few key takeaways from this diagram. Namely:
+* The data flows from parent to child object, along the domain layer. This avoids circular dependencies
+* Interfaces are used to expose the correct methods at eacy level
+* Classes are mirrored at every level of depth, and the mapping interface provides communication between each level. This leads to better data protection.
+
+
 
 ## Swagger Screenshots
 ![swagger 1](Images/Swagger1.JPG)
