@@ -43,14 +43,25 @@ The file structure of the API was broken up into 3 layers. The controller layer,
 ## Technical Diagrams
 To better illustrate the technologies used in this API, the following diagrams were created to communicate some key components of the design:
 
+### Class Diagram
 The first diagram shown below, is a class diagram. The API is far too large to include the specifics of every stack. Therefore, this diagram illustrates one section of the API. it shows the relation between UserProfiles, Subjects, and Tasks. 
 
 ![Class Diagram](Images/ClassDiagram.png)
 
 There are a few key takeaways from this diagram. Namely:
-* The data flows from parent to child object, along the domain layer. This avoids circular dependencies
-* Interfaces are used to expose the correct methods at eacy level
+* The data flows from parent to child object, along the domain layer. This avoids circular dependencies.
+* Interfaces are used to expose the correct methods at each level.
 * Classes are mirrored at every level of depth, and the mapping interface provides communication between each level. This leads to better data protection.
+
+### Stripe Integration Process Flow
+There were many integrations used in the implementation of this API. Most notably, a key integration was with Stripe to help serve the premium user functionality. As a startup, my co-founder and I were uncomfortable storing sensitive credit card information and user data in our local database. The effort that would be spent to ensure security was not time best spent.
+
+Thus, we decided to leverage Stripe's open API and services to store sensitive user billing data, for those who wished to sign up for premium features. The process flow diagram illustrates a low fidelity flow of the integration. The flow shows two key processes: the creation of the user database rows and how the the foreign keys are stored, along with the initialization of a subscription itself. 
+
+![Stripe Process Flow](Images/StripeProcessFlow.png)
+
+### AWS Infrastructure
+
 
 
 
