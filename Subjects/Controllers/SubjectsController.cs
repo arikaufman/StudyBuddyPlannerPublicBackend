@@ -47,7 +47,7 @@ namespace plannerBackEnd.Subjects.Controllers
         }
 
         // -----------------------------------------------------------------------------
-        // POST: api/subjects/create 
+        // POST: api/subjects/create
         [HttpPost("create")]
         public SubjectDto Create([FromBody] SubjectDto subjectDto)
         {
