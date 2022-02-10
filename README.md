@@ -55,7 +55,7 @@ The first diagram, shown below, illustrates the entire tech stack of the applica
 ![Tech Stack](Images/TechStack.png)
 
 ### Class Diagram
-The first diagram shown below, is a class diagram. The API is far too large to include the specifics of every stack. Therefore, this diagram illustrates one section of the API. it shows the relation between UserProfiles, Subjects, and Tasks. 
+The following diagram, is a class diagram. The API is far too large to include the specifics of every stack. Therefore, this diagram illustrates one section of the API. it shows the relation between UserProfiles, Subjects, and Tasks. 
 
 ![Class Diagram](Images/ClassDiagram.png)
 
