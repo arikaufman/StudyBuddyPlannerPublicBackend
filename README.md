@@ -82,7 +82,7 @@ Below, is a video pitch we presented at the QSS Startup Summit. Within this vide
 
 Access this pitch recording using the link below:
 
-Insert Team_22 Demo Video Here.
+https://www.youtube.com/watch?v=sSAh3a2N_yQ
 
 Hope you enjoy!
 
