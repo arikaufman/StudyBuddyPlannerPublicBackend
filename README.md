@@ -50,7 +50,7 @@ The file structure of the API was broken up into 3 layers. The controller layer,
 To better illustrate the technologies used in this API, the following diagrams were created to communicate some key components of the design:
 
 ### Tech Stack
-The first diagram, shown below, illustrates the entire tech stack of the application. It all languages and services used for the implementation, for both the front end (seperate repo), and back end (the current repo).
+The first diagram, shown below, illustrates the entire tech stack of the application. It shows all languages and services used for the implementation, for both the front end (seperate repo), and back end (the current repo).
 
 ![Tech Stack](Images/TechStack.png)
 
