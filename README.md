@@ -6,7 +6,6 @@
 [2 Technical Specifics](#Technical-Specifics)  
 [2.1 Technical Diagrams](#Technical-Diagrams)  
 [2.2 Swagger Screenshots](#Swagger-Screenshots)  
-[2.3 Notable Design Decisions](#Notable-Design-Decisions)  
 [3 Business Case](#Business-Case)  
 [3.1 Video Pitch](#Video-Pitch)  
 
@@ -67,19 +66,32 @@ There are a few key takeaways from this diagram. Namely:
 ### Stripe Integration Process Flow
 There were many integrations used in the implementation of this API. Most notably, a key integration was with Stripe to help serve the premium user functionality. As a startup, my co-founder and I were uncomfortable storing sensitive credit card information and user data in our local database. The effort that would be spent to ensure security was not time best spent.
 
-Thus, we decided to leverage Stripe's open API and services to store sensitive user billing data, for those who wished to sign up for premium features. The process flow diagram illustrates a low fidelity flow of the integration. The flow shows two key processes: the creation of the user database rows and how the the foreign keys are stored, along with the initialization of a subscription itself. 
+Thus, we decided to leverage Stripe's open API and services to store sensitive user billing data, for those who wished to sign up for premium features. The process flow diagram illustrates a low fidelity flow of the integration. The flow shows two key processes: the creation of the user database rows and how the the foreign keys are stored, along with the initialization of a subscription itself.
 
 ![Stripe Process Flow](Images/StripeProcessFlow.png)
 
 ### AWS Infrastructure
+AWS was used to host both the backend and front end deployments.
+* Route 53 was used as the DNS web service to handle incoming requests from the internet and client. All CNAME records would be defined here, and any routing specifications.
+* An automatic load balancer is then used to handle requests to the EC2 instance. given our size, the EC2 instance was never upgraded, and more were never added. If usage increased past a certain point, more EC2 instances would've been added, and the ALB structure would've accomodated for that.
+* The EC2 was used as the cloud computing platform. With remote desktop, I was able to enter the EC2 instance and deploy both the backend and frontend repos to be hosted.
+* Finally, all the prod data was stored in an RDS.
+
+The full diagram can be seen below.
+![AWS Structure](Images/AWSStructure.png)
 
 
 
 
 ## Swagger Screenshots
-![swagger 1](Images/Swagger1.JPG)
+Swagger was implemented in the Controller layer, to communicate the routes available to the frontend, and any of the requirements surrounding the calls. The images below show some of the routes provided for charting, along with a simple CRUD stack implemented in Tasks:
 
-## Notable Design Decisions
+ ![swagger 1](Images/Swagger1.JPG) | ![tasks](Images/Swagger2.JPG)
+ --- | ---
+
+And finally, all routes used for the UserProfiles stack. This includes functionality surrounding authentication (token generation), resetting passwords, and simple getter and setter methods.
+
+![swagger 3](Images/Swagger3.JPG)
 
 # Business Case
 ## Video Pitch
